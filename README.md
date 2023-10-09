@@ -4,4 +4,5 @@
 and display them on the screen with a user-friendly interface.</p>
 <p>Users can click a button to get a new joke and enjoy a good laugh.</p>
 <p>It's a fun project that combines programming skills with a touch of humor.</p>
-![Free_Jokes_IMG](./src/free_jokes.jpeg)
+
+![free_jokes](https://github.com/porpup/Free_Jokes_React_App/assets/3512401/1f75d792-ec69-44e5-a8ec-9e3e3ad843ed)
