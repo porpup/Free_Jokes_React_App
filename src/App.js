@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="App">
       <img src={freeJokesImage} alt="Free Jokes" width="300" className="rotate" />
-      <p style={{ height: '50px' }}>
+      <p style={{ height: '150px' }}>
         {activity || 'Click the button to get a Joke'}
       </p>
       <button className="get-activity-btn" onClick={handleGetActivity}>Get a Joke</button>
