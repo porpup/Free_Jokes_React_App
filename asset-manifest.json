@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Free_Jokes_React_App/static/css/main.c1553fb3.css",
-    "main.js": "/Free_Jokes_React_App/static/js/main.c9fe63fa.js",
+    "main.js": "/Free_Jokes_React_App/static/js/main.fa5a685b.js",
     "static/js/787.3407e7d2.chunk.js": "/Free_Jokes_React_App/static/js/787.3407e7d2.chunk.js",
     "static/media/free_jokes.jpeg": "/Free_Jokes_React_App/static/media/free_jokes.11df2f0250ef4c869651.jpeg",
     "index.html": "/Free_Jokes_React_App/index.html",
     "main.c1553fb3.css.map": "/Free_Jokes_React_App/static/css/main.c1553fb3.css.map",
-    "main.c9fe63fa.js.map": "/Free_Jokes_React_App/static/js/main.c9fe63fa.js.map",
+    "main.fa5a685b.js.map": "/Free_Jokes_React_App/static/js/main.fa5a685b.js.map",
     "787.3407e7d2.chunk.js.map": "/Free_Jokes_React_App/static/js/787.3407e7d2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1553fb3.css",
-    "static/js/main.c9fe63fa.js"
+    "static/js/main.fa5a685b.js"
   ]
 }
