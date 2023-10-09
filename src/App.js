@@ -4,7 +4,7 @@ import freeJokesImage from './free_jokes.jpeg';
 import confetti from 'canvas-confetti';
 
 function App() {
-  const [ activity, setActivity ] = useState('');
+  const [ activity, setActivity ] = useState({ setup: '', punchline: '' });
 
   const handleGetActivity = () => {
     var pumpkin = confetti.shapeFromPath({
@@ -22,34 +22,10 @@ function App() {
       matrix: [ 0.03333333333333333, 0, 0, 0.03333333333333333, -5.566666666666666, -5.533333333333333 ]
     });
 
-    var defaults = {
-      scalar: 2,
-      spread: 180,
-      particleCount: 30,
-      origin: { y: -0.1 },
-      startVelocity: -35
-    };
-
-    confetti({
-      ...defaults,
-      shapes: [ pumpkin ],
-      colors: [ '#ff9a00', '#ff7400', '#ff4d00' ]
-    });
-    confetti({
-      ...defaults,
-      shapes: [ tree ],
-      colors: [ '#8d960f', '#be0f10', '#445404' ]
-    });
-    confetti({
-      ...defaults,
-      shapes: [ heart ],
-      colors: [ '#f93963', '#a10864', '#ee0b93' ]
-    });
-
     fetch('https://official-joke-api.appspot.com/random_joke')
       .then(response => response.json())
       .then(data => {
-        setActivity(`${data.setup} ${data.punchline}`);
+        setActivity({ setup: data.setup, punchline: data.punchline });
       })
       .catch(error => {
         console.error('Error fetching joke:', error);
@@ -60,7 +36,9 @@ function App() {
     <div className="App">
       <img src={freeJokesImage} alt="Free Jokes" width="300" className="rotate" />
       <p style={{ height: '150px' }}>
-        {activity || 'Click the button to get a Joke'}
+        {activity.setup || 'Click the button to get a Joke'}
+        <br />
+        <span>{activity.punchline}</span>
       </p>
       <button className="get-activity-btn" onClick={handleGetActivity}>Get a Joke</button>
     </div>
